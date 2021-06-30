@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6d6d6d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.post-container {
+  padding: 0 20px 20px;
+  overflow-y: scroll;
+}
+
+.post-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 70%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+.audio-post, .video-post, .text-post {
+  width: 70%;
+}
+
+.text-post {
+  font-size: 1.1rem;
+}
+
+.time {
+  width: 30%;
+  text-align: center;
+}
+
+.audio-post ~ .coords {
+  margin-left: 20px;
+}
+
+.coords {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.create-posts-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /*padding: 10px;*/
+  border: 1px solid #464646;
+}
+
+.form-input {
+  width: calc(100% - 80px);
+  /*height: 100%;*/
+  margin-right: 20px;
+}
+
+#text-post {
+  width: 100%;
+  resize: none;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.microphone, .camera {
+  border: 1px solid #464646;
+  border-radius: 50%;
+  padding: 5px;
+  /*display: block;*/
+  /*width: 40px;*/
+  /*height: 40px;*/
+  /*font-size: 30px;*/
+  margin-right: 10px;
+  /*vertical-align: top;*/
+  /*text-align: start;*/
+  cursor: pointer;
+}
+
+.span-device {
+  /*font-size: 30px;*/
+}
+/*span {*/
+/*  vertical-align: top;*/
+/*  !*text-align: center;*!*/
+/*}*
+ */
+
+.modal {
+  display: flex;
+  position: absolute;
+  background-color: ghostwhite;
+  opacity: 999;
+  z-index: 100;
+  flex-direction: column;
+  /*align-items: center;*/
+  padding: 20px;
+  width: 30%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+.coords-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#input-coords {
+  margin-top: 10px;
+  color: #464646;
+  padding: 5px;
+  resize: none;
+}
+
+.wrapper-buttons-modal {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.wrapper-buttons-modal > button {
+  border: 1px solid #464646;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
